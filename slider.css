@@ -1,0 +1,81 @@
+/* CSS style sheet */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+img{
+    display: block;
+    line-height: 0;
+}
+
+.wrap{
+    width: 100%;
+}
+
+.snb_wrap{
+    z-index: 11;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.visual_wrap{
+    position: relative;
+}
+
+.interview img{
+    display: inline-block;
+    
+}
+
+.interview > ul{
+    display: flex;
+    width: 236px;
+    height: 187px;
+    
+}
+
+.interview li{
+    border: 1px solid #ececec;
+}
+
+.move{
+    position: relative;
+    left: 0;
+    animation:slider 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes slider{
+    to{ 
+        transform: translateX(calc(-100%));
+    }from{
+        
+        left: 0;
+    }
+}
+
+.move2{
+    position: relative;
+    left: 0;
+    animation-fill-mode: forwards;
+    
+}
+
+
