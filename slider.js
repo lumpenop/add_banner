@@ -15,11 +15,10 @@ function slider(){
 
 rollin = setInterval(slider, 2000);
 
-
 function left(){
     clearInterval(rollin);
     slider()
-    /* rollin = setInterval(slider, 2000); */
+    rollin = setInterval(slider, 2000);
 }
 
 function right(){
@@ -38,4 +37,16 @@ function right(){
         document.querySelector('.interview ul').removeChild(li[3]);
         }, 100);
     rollin = setInterval(slider, 2000);
+}
+
+stop = () => {
+    clearInterval(rollin);
+
+}
+
+restart = () => {
+    setInterval(slider(), 1000);
+    rollin = setInterval(slider, 2000);
+
+
 }
