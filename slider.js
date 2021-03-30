@@ -39,14 +39,20 @@ function right(){
     rollin = setInterval(slider, 2000);
 }
 
+li = document.querySelectorAll('.interview li');
+
+for (i=0; i< li.length; i++){
+    li[i].setAttribute("onmouseover","stop()");
+    li[i].setAttribute("onmouseout","restart()");
+
+}
 stop = () => {
     clearInterval(rollin);
 
 }
 
 restart = () => {
-    setInterval(slider(), 1000);
+    clearInterval(rollin);
     rollin = setInterval(slider, 2000);
-
 
 }
