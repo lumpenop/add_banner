@@ -79,3 +79,49 @@ img{
 }
 
 
+.left_btn, 
+.right_btn{
+    background: gray;
+    color: honeydew;
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.btn_con {
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+.move_right{
+    position: relative;
+    transform: translateX(calc(-100%));
+    animation-fill-mode: forwards;
+    
+}
+
+.move_right2{
+    position: relative;
+    transform: translateX(calc(-100%));
+    animation:slider2 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes slider2{
+    to{ 
+        transform: translateX(0%);
+    }from{
+        
+        transform: translateX(calc(-100%));
+    }
+}
